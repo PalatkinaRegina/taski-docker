@@ -198,7 +198,7 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Деплой '${{ github.event.head_commit.message }}' успешно выполнен!
+          message: Taski - Деплой '${{ github.event.head_commit.message }}' успешно выполнен!
 
       - name: Send message on failure
         if: ${{ failure() }}
@@ -206,4 +206,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Деплой '${{ github.event.head_commit.message }}' не выполнен!
+          message: Taski - Деплой '${{ github.event.head_commit.message }}' не выполнен!
